@@ -26,6 +26,7 @@ export default async function LocaleLayout({
   children: React.ReactNode
 }>) {
   const messages = await getMessages()
+  const currentYear = new Date().getFullYear()
 
   return (
     <html lang="es" className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}>
@@ -33,7 +34,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
           <footer className="py-6 text-center text-sm opacity-70">
-            Mundial 2026 · Trabajo Final Integrador · UTN FRT
+            Mundial 2026 · Trabajo Final Integrador · UTN FRT · {currentYear}
           </footer>
         </NextIntlClientProvider>
       </body>

@@ -34,7 +34,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
           <footer className="py-6 text-center text-sm opacity-70">
-            Mundial 2026 · Trabajo Final Integrador · UTN FRT · {currentYear}
+            © {currentYear} Mundial 2026 - Proyecto de Mauricio Nieva
           </footer>
         </NextIntlClientProvider>
       </body>

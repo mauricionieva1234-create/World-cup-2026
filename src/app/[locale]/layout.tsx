@@ -34,7 +34,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
           <footer className="py-6 text-center text-sm opacity-70">
-            Mundial 2026 · Trabajo Final Integrador · UTN FRT · {currentYear}
+                        Metodología de Sistemas II | TP1 | UTN FRT | {currentYear}
           </footer>
         </NextIntlClientProvider>
       </body>

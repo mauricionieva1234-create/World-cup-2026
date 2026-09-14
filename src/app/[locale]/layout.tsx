@@ -30,7 +30,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang="es" className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}>
-      <body className="min-h-screen antialiased font-sans">
+      <body className="min-h-screen antialiased font-sans bg-gradient-to-b from-slate-950 to-blue-950 text-slate-100">
         <NextIntlClientProvider messages={messages}>
           {children}
           <footer className="py-6 text-center text-sm opacity-70">

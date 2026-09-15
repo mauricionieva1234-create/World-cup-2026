@@ -33,8 +33,8 @@ export default async function LocaleLayout({
       <body className="min-h-screen antialiased font-sans bg-gradient-to-b from-slate-950 to-blue-950 text-slate-100">
         <NextIntlClientProvider messages={messages}>
           {children}
-          <footer className="py-6 text-center text-sm opacity-70">
-           © {currentYear} Mundial 2026 · Proyecto de Mauricio Nieva · Metodología de Sistemas II, TP1, UTN FRT
+          <footer className="py-6 text-center text-xs sm:text-sm opacity-70 px-4">
+            © {currentYear} Mundial 2026 · Proyecto de Mauricio Nieva · Metodología de Sistemas II, TP1, UTN FRT
           </footer>
         </NextIntlClientProvider>
       </body>
